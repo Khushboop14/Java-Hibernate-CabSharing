@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package = "hib.dto">
+    <class name = "EmployeeSignin" table = "EmployeeSignintab">
+        <id name = "employeeid" column = "EmployeeId"></id>
+        <property name="name" column="Name"></property>
+        <property name="designation" column="Designation"></property>
+        <property name="contact" column="Contact"></property>
+        <property name="address" column="Address"></property>
+        <property name = "username" column = "Username"></property>
+        <property name = "password" column = "Password"></property>
+</class>
+</hibernate-mapping>
+      

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package ="hib.dto"> 
+    <class name = "CabDetails" table ="CabDetailsTab">
+            <id name = "cabnumber" column = "CabNumber"> </id>
+            <property name = "cabId" column = "CabID"></property>
+            <property name = "cabtype" column = "CabType"></property>
+            <property name = "cabdrivername" column = "CabDriverName"></property>
+           <property name = "drivercontact" column = "DriverContact"> </property>
+<!--           <property name = "name" column = "Name"></property>
+      //     <property name = "contact" column= "Contact"></property>-->
+    </class>
+</hibernate-mapping>
+  

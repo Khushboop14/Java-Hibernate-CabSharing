@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping package="hib.dto">
+    <class name="DriverSignin" table="DriverSignintab">
+        <id name="name" column="CabId"></id>            
+        <property name="cabnumber" column="CabNumber"></property>   
+        <property name="cabtype" column="CabType"></property>   
+        <property name="name" column="Name"></property>
+        <property name="contact" column="Contact"></property>
+        <property name="username" column="Username"></property>
+        <property name="password" column="Password"></property>
+    </class>
+</hibernate-mapping>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+<hibernate-mapping package ="hib.dto">
+    <class name = "DriverSignin" table = "DriverSignintab">
+        <id name = "name" column = "CabNumber"></id>
+         <property name = "name" column = "Name"></property>
+         <property name = "contact" column = "Contact"></property>
+        <property name = "username" column = "Username"></property>
+        <property name = "password" column = "Password"></property>
+        
+    <joined-subclass name = "CabDetails" table ="CabDetailsTab">
+            <key column = "CabNumber"/>
+            <property name = "cabtype" column = "CabType"></property>
+            <property name = "cabdrivername" column = "CabDriverName"></property>
+           <property name = "drivercontact" column = "DriverContact"> </property>
+    </joined-subclass>
+        
+    </class>
+</hibernate-mapping>
+  -->
+  
